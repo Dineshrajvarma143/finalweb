@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>Webproject1</display-name>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+    <welcome-file>register.jsp</welcome-file>
+    <welcome-file>booking.jsp</welcome-file>
+    <welcome-file>cancel.jsp</welcome-file>
+    <welcome-file>update.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <servlet>
+	<servlet-name>Login</servlet-name>
+	<servlet-class>com.Webproject1.Servlets.Login</servlet-class>
+</servlet>
+	
+<servlet-mapping>
+	<servlet-name>Login</servlet-name>
+	<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+
+  
+<servlet>
+	<servlet-name>Project</servlet-name>
+	<servlet-class>com.Webproject1.Servlets.Project</servlet-class>
+</servlet>
+	
+<servlet-mapping>
+	<servlet-name>Project</servlet-name>
+	<url-pattern>/Project</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+	<servlet-name>Booking</servlet-name>
+	<servlet-class>com.Webproject1.Servlets.Booking</servlet-class>
+</servlet>
+	
+<servlet-mapping>
+	<servlet-name>Booking</servlet-name>
+	<url-pattern>/Booking</url-pattern>
+</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>Cancel</servlet-name>
+	<servlet-class>com.Webproject1.Servlets.Cancel</servlet-class>
+</servlet>
+	
+<servlet-mapping>
+	<servlet-name>Cancel</servlet-name>
+	<url-pattern>/Cancel</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>view</servlet-name>
+	<servlet-class>com.Webproject1.Servlets.view</servlet-class>
+</servlet>
+	
+<servlet-mapping>
+	<servlet-name>view</servlet-name>
+	<url-pattern>/view</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>update</servlet-name>
+	<servlet-class>com.Webproject1.Servlets.update</servlet-class>
+</servlet>
+	
+<servlet-mapping>
+	<servlet-name>update</servlet-name>
+	<url-pattern>/update</url-pattern>
+</servlet-mapping>
+</web-app>
